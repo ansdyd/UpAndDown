@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/activity_sms_graph_page"
+        android:title="Graphs"
+        android:icon="@drawable/ic_poll_black_24dp"
+        />
+    <item
+        android:id="@+id/phase_log_page"
+        android:title="Log"
+        android:icon="@drawable/ic_list_black_24dp"
+        />
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add_depressed_phase"
+        android:title="Depressed"
+        />
+    <item
+        android:id="@+id/action_add_manic_phase"
+        android:title="(Hypo)Manic"
+        />
+</menu>

@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.example.munyongjang.bipolardisorder"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    supportLibraryVersion = '24.2.1'
+    googleApiClientVersion = '1.22.0'
+}
+
+dependencies {
+    // Dependencies for Google API Client Libraries
+    compile("com.google.http-client:google-http-client:$googleApiClientVersion") {
+        exclude module: 'httpclient'
+        exclude module: 'jsr305'
+    }
+    compile("com.google.api-client:google-api-client-android:$googleApiClientVersion") {
+        exclude module: 'httpclient'
+        exclude module: 'jsr305'
+    }
+    compile("com.google.apis:google-api-services-language:v1-rev5-$googleApiClientVersion") {
+        exclude module: 'httpclient'
+        exclude module: 'jsr305'
+    }
+
+    // for play services
+    compile 'com.google.android.gms:play-services:8.1.0'
+
+    // for the eventbus in passing around the DB object
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    // for the chart library
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+
+    // for the calendar square from Square, Inc.
+    compile 'com.squareup:android-times-square:1.6.5@aar'
+
+    // gson
+    //compile 'com.google.code.gson:gson:2.8.0'
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+
+    testCompile 'junit:junit:4.12'
+    compile 'junit:junit:4.12'
+    compile 'com.android.support.test:runner:0.4.1'
+    compile files('libs/funf-0.4.2.jar')
+    compile files('libs/gson-2.1.funf.jar')
+}
