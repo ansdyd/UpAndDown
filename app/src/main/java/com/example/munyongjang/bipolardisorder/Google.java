@@ -24,7 +24,7 @@ import java.io.IOException;
 // AsyncTask to call upon Google's API, all it needs is the text to be analyzed
 public class Google extends AsyncTask<Object, Void, Void> {
 
-    private static final String API_KEY = "AIzaSyCPJ9Xff5lXkGjdLuoDw-cd_KITmKbptAY";
+    private static final String API_KEY = "ENTER YOUR API KEY HERE";
 
     @Override
     protected Void doInBackground(Object... params) {

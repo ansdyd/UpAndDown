@@ -49,7 +49,7 @@ public class sentimentApiMicrosoft {
             connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
 
             // this is my API key
-            connection.setRequestProperty("Ocp-Apim-Subscription-Key", "d9e1b76c741744b08500b5ef544688bd");
+            connection.setRequestProperty("Ocp-Apim-Subscription-Key", "--ENTER YOUR API KEY HERE--");
 
             OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
             writer.write(payload);

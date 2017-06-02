@@ -21,7 +21,7 @@ import java.net.URL;
 public class Microsoft extends AsyncTask<String, Void, String> {
 
     private static final String MICROSOFT_URL = "https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment";
-    private static final String API_KEY = "d9e1b76c741744b08500b5ef544688bd";
+    private static final String API_KEY = "ENTER YOUR API KEY HERE";
 
     @Override
     protected String doInBackground(String... params) {
